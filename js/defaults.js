@@ -38,6 +38,11 @@ var defaults = {
   showHighlighting: 1,
   highlightFontSize: 3,
   highlightWindowSize: 2,
+  //AI chat sites (claude.ai, grok.com); see js/content/ai-chat.js
+  aiChatCode: "announce",       //announce | skip | read
+  aiChatTables: "read",         //read | announce | skip
+  aiChatThinking: "skip",       //skip | read
+  aiChatCitations: "skip",      //skip | read
 };
 
 var getSingletonAudio = lazy(() => {

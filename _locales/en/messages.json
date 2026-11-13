@@ -187,6 +187,27 @@
   "options_audio_playback_embedded": {
     "message": "In page"
   },
+  "options_ai_chat_code": {
+    "message": "Claude / Grok: code blocks"
+  },
+  "options_ai_chat_tables": {
+    "message": "Claude / Grok: tables"
+  },
+  "options_ai_chat_thinking": {
+    "message": "Claude / Grok: reasoning sections"
+  },
+  "options_ai_chat_citations": {
+    "message": "Claude / Grok: citations"
+  },
+  "options_ai_chat_skip": {
+    "message": "Skip"
+  },
+  "options_ai_chat_announce": {
+    "message": "Announce only"
+  },
+  "options_ai_chat_read": {
+    "message": "Read aloud"
+  },
   "advanced_word_replacements_help": {
     "message": "How to use word replacements"
   },
