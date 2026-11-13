@@ -211,6 +211,27 @@
 
 
 
+  //AI chat sites (claude.ai, grok.com)
+  for (const [setting, selector] of [
+    ["aiChatCode", "#ai-chat-code"],
+    ["aiChatTables", "#ai-chat-tables"],
+    ["aiChatThinking", "#ai-chat-thinking"],
+    ["aiChatCitations", "#ai-chat-citations"],
+  ]) {
+    domReadyPromise
+      .then(() => {
+        $(selector)
+          .change(function() {
+            updateSettings({[setting]: $(this).val()})
+          })
+      })
+
+    rxjs.combineLatest([observeSetting(setting), domReadyPromise])
+      .subscribe(([value]) => $(selector).val(value || defaults[setting]))
+  }
+
+
+
   //audioPlayback
   Promise.all([brapi.storage.local.get(["useEmbeddedPlayer"]), domReadyPromise])
     .then(([settings]) => {

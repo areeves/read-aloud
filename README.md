@@ -94,6 +94,10 @@ You can change the voice, reading speed, pitch, or enable text highlighting:
 3. Click on the Gear icon in the Read Aloud context menu. (It may take a second or two for settings to appear)
 
 
+### AI chat sites (Claude, Grok)
+
+Reads a single reply instead of the whole page, with options for code blocks, tables, reasoning sections and citations. [Details and how to fix selectors](docs/usage/ai-chat.md)
+
 ### Using Premium Voices
 [Using Premium Voices (Google Wavenet & Amazon Polly)](docs/usage/premium-voices.md)
 

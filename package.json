@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/ken107/read-aloud/issues"
   },
-  "homepage": "https://readaloud.app"
+  "homepage": "https://readaloud.app",
+  "devDependencies": {
+    "jsdom": "^31.0.1"
+  }
 }
